@@ -109,7 +109,7 @@ public class SingleplayerPanel extends JPanel implements Runnable { // Single pl
         if (ball.getX() < - Values.BALL_SIZE) { // if X coordinates of ball are smaller than diameter of ball, then ball resets and player1 scores goal and that means +1 point to overall score of player 1
 
             ball.resetBall();
-            score.p1Goal();
+            score.p2Goal();
 
 
         }
@@ -117,7 +117,7 @@ public class SingleplayerPanel extends JPanel implements Runnable { // Single pl
         if (ball.getX() > Values.GAME_WIDTH) {  // if X coordinates of ball are bigger than width of game screenm then ball resets and player2 scores goal and that means +1 point to overall score of player 2
 
             ball.resetBall();
-            score.p2Goal();
+            score.p1Goal();
 
         }
     }
