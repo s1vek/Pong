@@ -74,7 +74,7 @@ public class PvpPanel extends JPanel implements Runnable { // PvP mode login
         if (ball.getX() < - Values.BALL_SIZE) { // if X coordinates of ball are smaller than diameter of ball, then ball resets and player 1 scores goal and that means +1 point to overall score of player 1
 
             ball.resetBall();
-            score.p1Goal();
+            score.p2Goal();
 
 
         }
@@ -82,7 +82,7 @@ public class PvpPanel extends JPanel implements Runnable { // PvP mode login
         if (ball.getX() > Values.GAME_WIDTH) { // if X coordinates of ball are bigger than width of game screen then ball resets and player 2 scores goal and that means +1 point to overall score of player 2
 
             ball.resetBall();
-            score.p2Goal();
+            score.p1Goal();
 
         }
     }
